@@ -2,7 +2,11 @@ package test.main;
 /*
  *  5. 대입연산자 테스트
  *  
+<<<<<<< HEAD
  *  +=, -=, *=, /=, %=
+=======
+ *  +=, -=, *=, /=, %= 
+>>>>>>> refs/remotes/upstream/master
  */
 public class MainClass05 {
 	public static void main(String[] args) {

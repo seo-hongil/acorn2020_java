@@ -4,19 +4,31 @@ package test.main;
  */
 public class MainClass04 {
 	public static void main(String[] args) {
+<<<<<<< HEAD
 		// or 연산
 		//어느 하나라도 true면 true인 것
+=======
+		// or 연산 
+>>>>>>> refs/remotes/upstream/master
 		boolean result1 = false || false; //false
 		boolean result2 = false || true; //true
 		boolean result3 = true || false; //true
 		boolean result4 = true || true; //true
+<<<<<<< HEAD
 		//and 연산
+=======
+		// and 연산
+>>>>>>> refs/remotes/upstream/master
 		boolean result5 = false && false; //false
 		boolean result6 = false && true; //false
 		boolean result7 = true && false; //false
 		boolean result8 = true && true; //true
+<<<<<<< HEAD
 		
 		//not 연산
+=======
+		// not 연산
+>>>>>>> refs/remotes/upstream/master
 		boolean result9 = !true; //false
 		boolean result19 = !false; //true
 		
