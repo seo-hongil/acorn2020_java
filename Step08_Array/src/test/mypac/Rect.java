@@ -13,9 +13,4 @@ public class Rect {
 	public int getArea() {
 		return width*height;
 	}
-<<<<<<< HEAD
-
-=======
-	
->>>>>>> refs/remotes/upstream/master
 }
