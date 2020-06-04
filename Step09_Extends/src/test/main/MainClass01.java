@@ -15,6 +15,7 @@ public class MainClass01 {
 		Phone p4=new HandPhone();
 		Object p5=new HandPhone();
 		
+		
 		//이미 만들어진 객체의 참조값을 다른 type 으로 받아보기
 		Phone p6=p3;
 		Object p7=p3;
