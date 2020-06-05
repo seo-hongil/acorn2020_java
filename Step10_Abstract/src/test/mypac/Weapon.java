@@ -10,4 +10,5 @@ public abstract class Weapon {
 	}
 	//구현 되지 않은 추상 메소드를 abstract 예약어를 붙여서 정의해야한다.
 	public abstract void attack();
+	
 }

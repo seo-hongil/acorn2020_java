@@ -19,7 +19,7 @@ public class Zoo {
 	//내부 클래스
 	public class Tiger{
 		public void say() {
-			System.out.println();
+			System.out.println("안녕! 나는 호랑이야");
 		}
 		
 	}
