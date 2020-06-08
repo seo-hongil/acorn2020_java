@@ -5,7 +5,6 @@ import java.util.Random;
 public class MainClass04 {
 	public static void main(String[] args) {
 		/*
-<<<<<<< HEAD
 		 * 프로그램의 목적 : 무작위 정수를 얻어내고 싶다.
 		 * 얻어내서 무얼하지? 그냥 콘솔창에 출력하고 싶다. 
 		 */

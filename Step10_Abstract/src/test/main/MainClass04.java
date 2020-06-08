@@ -1,4 +1,8 @@
 package test.main;
+/*
+ * 클래스 안에 만든 메소드 : inner class
+ * 메소드 안에 만든 클래스 : local inner class
+ */
 
 public class MainClass04 {
 	public static void main(String[] args) {

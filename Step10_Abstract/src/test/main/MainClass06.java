@@ -23,7 +23,10 @@ public class MainClass06 {
 	 * 근데 불금이다보니 만사가 귀찮다. 클래스를 파일로 만들기 싫다.
 	 * 내부 클래스(inner class) 로 만들고 싶다.
 	 */
+		Weapon w1 = new YourWeapon();
+		useWeapon(w1);
 	
+		//local inner class도 이용해 보자
 	class OurWeapon extends Weapon{
 
 		@Override
@@ -32,8 +35,8 @@ public class MainClass06 {
 		}
 		
 	}
-	
-		Weapon w2=new OureWeapon();
+		
+		Weapon w2=new OurWeapon();
 		useWeapon(w2);
 	}
 
@@ -42,4 +45,4 @@ public class MainClass06 {
 		w.attack();
 	}
 }
-}
+

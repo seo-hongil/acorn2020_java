@@ -1,4 +1,4 @@
-package test.main;
+ package test.main;
 /*
  *  5. 대입연산자 테스트
  *  

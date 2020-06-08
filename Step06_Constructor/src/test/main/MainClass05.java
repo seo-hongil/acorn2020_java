@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class MainClass05 {
 	public static void main(String[] args) {
 		/*
-<<<<<<< HEAD
 		 * 프로그래밍의 목적 : 키보드로 부터 문자열을 입력 받고 싶다.
 		 * 입력 받아서 무얼하나? 콘솔창에 출력한다.
 		 */
