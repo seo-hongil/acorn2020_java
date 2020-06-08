@@ -29,22 +29,17 @@ public class MainClass06 {
 		@Override
 		public void attack() {
 			System.out.println("지겹다 이제 그만 공격하자");
-			
-			
 		}
 		
 	}
-	}
-		Weapon w1=new YourWeapon();
-		useWeapon(w1);
 	
 		Weapon w2=new OureWeapon();
 		useWeapon(w2);
-	
-}
+	}
+
 	public static void useWeapon(Weapon w) {
 		w.prepare();
 		w.attack();
 	}
 }
-
+}
