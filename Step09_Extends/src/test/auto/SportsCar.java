@@ -6,7 +6,7 @@ public final class SportsCar extends Car{
 
 	public SportsCar(Engine engine) {
 		super(engine);
-		// TODO Auto-generated constructor stub
+		
 	}
 	//메소드
 	@Override
