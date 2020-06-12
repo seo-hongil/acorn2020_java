@@ -5,10 +5,10 @@ import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-public class MyFrame4 extends JFrame {
+public class MyFrame extends JFrame {
 	
 	//생성자
-	public MyFrame4(String title) {
+	public MyFrame(String title) {
 		super(title);
 		setBounds(100,100,500,500);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -30,6 +30,6 @@ public class MyFrame4 extends JFrame {
 		setVisible(true);
 	}
 	public static void main(String[] args) {
-		new MyFrame4("나의 프레임");
+		new MyFrame("나의 프레임");
 	}
 }
