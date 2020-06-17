@@ -1,11 +1,8 @@
-  
-package example2;
+package example1;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.SocketException;
 
 public class ServerMain {
 	public static void main(String[] args) {
@@ -25,13 +22,6 @@ public class ServerMain {
 				System.out.println("클라이언트가 접속을 했습니다.");
 				String clientIp=socket.getInetAddress().getHostAddress();
 				System.out.println("접속한 클라이언트의 아이피:"+clientIp);
-				//클라이언트로 부터 읽어들일 (Input) 객체의 참조값 얻어오기
-				InputStream is=socket.getInputStream();
-				InputStreamReader isr=new InputStreamReader(is);
-				BufferedReader br=new BufferedReader(isr);
-				//클라이언트가 전송한 문자열 한줄 읽어들이기 
-				String msg=br.readLine();
-				System.out.println("메세지:"+msg);
 				socket.close();
 			}
 		}catch(Exception e) {

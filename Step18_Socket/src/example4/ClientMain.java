@@ -15,7 +15,6 @@ import javax.swing.JTextField;
 public class ClientMain extends JFrame implements ActionListener{
 	//필드
 	JTextField tf_msg;
-	
 	//서버와 연결된 Socket 객체의 참조값을 담을 필드
 	Socket socket;
 	
