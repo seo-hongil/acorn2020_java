@@ -1,4 +1,4 @@
-package example4;
+package example5;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -21,6 +21,19 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
+import org.json.JSONObject;
+
+/*메세지의 종류
+ * 
+ * 1.일반 대화 메세지
+ * 	 {"name":"김구라". "msg":"안녕하세요"}
+ * 2.누군가 입장 했다는 메세지
+ * 	 {"enter":"김구라"}
+ * 3.누군가 퇴장했다는 메세지
+ *   {"out":"원숭이"}
+ * 4. 참여자 목록 메세지
+ *    {"members":["김구라","해골","원숭이"]}
+ */
 public class ClientMain extends JFrame 
 			implements ActionListener, KeyListener{
 	//필드
@@ -42,6 +55,16 @@ public class ClientMain extends JFrame
 			OutputStream os=socket.getOutputStream();
 			OutputStreamWriter osw=new OutputStreamWriter(os);
 			bw=new BufferedWriter(osw);
+			//내가 입장한다고 서버에 메세지를 보낸다.
+			// "{"enter":"김구라"}"
+			JSONObject jsonObj=new JSONObject();
+			//jsonObj.put("enter",chatName);
+			String msg=jsonObj.toString();
+			
+			//BufferedWriter 객체를 이용해서 보내기
+			bw.write(msg);
+			bw.newLine();
+			
 			//서버로 부터 메세지를 받을 스레드도 시작을 시킨다.
 			new ClientThread().start();
 		}catch(Exception e) {//접속이 실패하면 예외가 발생한다.
@@ -112,6 +135,7 @@ public class ClientMain extends JFrame
 			bw.write(msg);
 			bw.newLine();//개행기호도 출력 (서버에서 줄단위로 읽어낼 예정)
 			bw.flush();
+		
 		}catch(Exception e2) {
 			e2.printStackTrace();
 		}
@@ -169,5 +193,3 @@ public class ClientMain extends JFrame
 		
 	}
 }
-
-

@@ -22,7 +22,7 @@ public class MyFrame extends JFrame implements ActionListener{
 		setLayout(new FlowLayout());
 		
 		//버튼
-		this.sendBtn=new JButton("전송");
+		sendBtn=new JButton("전송");
 		this.removeBtn=new JButton("삭제");
 		
 		//버튼에 command 등록하기(어떤 기능을 하는 버튼인지)
